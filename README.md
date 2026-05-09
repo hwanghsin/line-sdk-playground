@@ -6,6 +6,8 @@
 - `GET /health`：健康檢查
 - `POST /callback`：LINE Webhook 入口
 - 收到文字訊息時，回覆：`你說的是：<原文字>`
+- 回覆訊息會明確帶上 `type` 欄位
+- 支援官方訊息類別：`text`、`image`、`video`、`audio`、`location`、`sticker`、`imagemap`、`template`、`flex`
 
 ## 環境變數
 - `LINE_CHANNEL_ACCESS_TOKEN`
